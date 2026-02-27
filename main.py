@@ -4,10 +4,9 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
-# ==========================================
 # CONFIGURACION DE LOGS (DEBUGGING)
-# ==========================================
-# Se mantiene el sistema de logs ya que es una buena practica de ingenieria
+
+# Se crea  sistema de logs que escribe en un archivo 'bot.log' y tambien muestra en consola.
 # para rastrear el flujo de ejecucion y errores sin depender de la consola.
 logging.basicConfig(
     level=logging.INFO,
@@ -19,9 +18,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# ==========================================
 # DEFINICION DE LA CLASE PRINCIPAL
-# ==========================================
 class BotUPS(commands.Bot):
     """
     Clase principal del bot que aplica herencia.
@@ -60,9 +57,7 @@ class BotUPS(commands.Bot):
                 except Exception as e:
                     logger.error(f"Fallo al cargar el modulo {filename}. Causa: {e}")
 
-    # ==========================================
     # EVENTOS DEL SISTEMA (Sobrescritura de eventos base)
-    # ==========================================
     async def on_ready(self):
         # Confirma que el socket TCP/IP con Discord se establecio correctamente
         logger.info("-" * 50)
@@ -94,9 +89,7 @@ class BotUPS(commands.Bot):
         else:
             logger.error(f"Excepcion no controlada en el contexto {ctx.command}: {error}")
 
-# ==========================================
 # PUNTO DE ENTRADA DEL PROGRAMA
-# ==========================================
 if __name__ == "__main__":
     # La validacion de variables de entorno se mantiene en el bloque principal
     # garantizando que no se instancie la clase si faltan dependencias criticas.
@@ -106,7 +99,6 @@ if __name__ == "__main__":
     if not token:
         logger.critical("Error fatal: Variable de entorno DISCORD_TOKEN no encontrada. Abortando ejecucion.")
         exit(1)
-        
     # Instanciacion del objeto principal y ejecucion del bucle de eventos
     bot_instancia = BotUPS()
     bot_instancia.run(token)

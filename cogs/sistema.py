@@ -45,12 +45,10 @@ class Sistema(commands.Cog):
             title="Informacion del Sistema",
             description="Metricas de rendimiento y configuracion del hardware"
         )
-        # ... (final del comando health, dentro de la clase) ...
+        #(final del comando health, dentro de la clase)
         embed.set_footer(text=f"Identificador del proceso: {self.bot.user.id}")
         await ctx.send(embed=embed)
 
-# ==========================================
 # FUNCION DE ENLACE GLOBAL (Fuera de la clase)
-# ==========================================
 async def setup(bot):
     await bot.add_cog(Sistema(bot))
