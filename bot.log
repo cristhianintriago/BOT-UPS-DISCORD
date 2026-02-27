@@ -626,3 +626,14 @@ aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gatewa
 2026-02-27 08:15:57,930 - INFO - SISTEMA ONLINE Y OPERATIVO
 2026-02-27 08:15:57,931 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
 2026-02-27 08:15:57,931 - INFO - --------------------------------------------------
+2026-02-27 08:48:17,196 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 08:48:17,200 - INFO - logging in using static token
+2026-02-27 08:48:18,118 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 08:48:22,491 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 08:48:22,520 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 08:48:22,527 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 08:48:23,135 - INFO - Shard ID None has connected to Gateway (Session ID: f12bb98c93f068ce268b4acfa5569ee2).
+2026-02-27 08:48:25,150 - INFO - --------------------------------------------------
+2026-02-27 08:48:25,151 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 08:48:25,151 - INFO - Instancia de usuario: UPS Bot Académico | ID de proceso: 1472995954734010438
+2026-02-27 08:48:25,152 - INFO - --------------------------------------------------
