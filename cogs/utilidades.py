@@ -95,6 +95,7 @@ class Utilidades(commands.Cog):
                 "`!materias` - Retorna malla curricular\n"
                 "`!entregas` - Consulta de tareas pendientes\n"
                 "`!tutor <consulta>` - Interfaz con IA\n"
+                "`!apa <autor> <año> <titulo> [editorial]` - Genera una referencia siguiendo las normas APA 7ma edición.\n"
                 "`!cuota_ia` - Metricas del uso de API"
             ),
             inline=False
@@ -105,7 +106,6 @@ class Utilidades(commands.Cog):
             value=(
                 "`!binario <numero>` - Conversion base 10 a base 2\n"
                 "`!unidades <cantidad> <unidad>` - Conversion de memoria\n"
-                #"`!sys_info` - Diagnostico de hardware\n"
                 "`!health` - Estado de salud del nodo"
             ),
             inline=False

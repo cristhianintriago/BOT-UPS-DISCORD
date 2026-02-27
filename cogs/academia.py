@@ -225,5 +225,30 @@ class Academia(commands.Cog):
         embed.set_footer(text="Calculadora Dinámica de Promedios - Sistema UPS")
         await ctx.send(embed=embed)
     
+    #CITADOR DE NORMAS APA
+    @commands.command(name="apa")
+    async def apa(self, ctx, autor: str, año: str, titulo: str, editorial: str = "N/A"):
+        # Limpieza básica de datos
+        autor = autor.strip()
+        titulo = titulo.strip()
+        
+        # Formateo según norma APA (Séptima Edición)
+        # Formato: Apellido, N. (Año). Título del trabajo. Editorial.
+        cita = f"{autor}. ({año}). *{titulo}*. {editorial}."
+
+        embed = discord.Embed(
+            title="📚 Generador de Citas APA",
+            description="Aquí tienes tu referencia lista para copiar y pegar:",
+            color=discord.Color.blue()
+        )
+        
+        embed.add_field(name="Cita Generada", value=f"```{cita}```", inline=False)
+        embed.set_footer(text="Normas APA 7ma Edición - Asistente UPS")
+        
+        await ctx.send(embed=embed)
+        if not autor or not año or not titulo:
+            await ctx.send("⚠️ Error: Faltan datos. Uso: `!apa \"Autor\" \"Año\" \"Título\" \"Editorial\"`")
+            return
+        
 async def setup(bot):
     await bot.add_cog(Academia(bot))
