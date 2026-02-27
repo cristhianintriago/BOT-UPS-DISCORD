@@ -1,0 +1,14 @@
+# Archivos de configuracion y credenciales
+.env
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos de cache compilados de Python
+__pycache__/
+*.pyc
+
+# Archivos de registro del sistema
+bot.log

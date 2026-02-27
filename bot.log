@@ -1,0 +1,534 @@
+2026-02-26 20:30:38,358 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 20:30:38,363 - INFO - logging in using static token
+2026-02-26 20:30:38,992 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-26 20:30:38,995 - ERROR - Fallo al cargar el modulo academia.py. Causa: '(' was never closed (__init__.py, line 14)
+2026-02-26 20:30:38,997 - ERROR - Fallo al cargar el modulo sistema.py. Causa: '(' was never closed (__init__.py, line 14)
+2026-02-26 20:30:38,999 - ERROR - Fallo al cargar el modulo utilidades.py. Causa: '(' was never closed (__init__.py, line 14)
+2026-02-26 20:30:39,400 - INFO - Shard ID None has connected to Gateway (Session ID: 78d54da31190108cdde48b4bb1e8932c).
+2026-02-26 20:30:41,411 - INFO - --------------------------------------------------
+2026-02-26 20:30:41,429 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 20:30:41,430 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 20:30:41,430 - INFO - --------------------------------------------------
+2026-02-26 20:35:03,855 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 20:35:03,858 - INFO - logging in using static token
+2026-02-26 20:35:04,615 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-26 20:35:04,617 - ERROR - Fallo al cargar el modulo academia.py. Causa: '(' was never closed (__init__.py, line 14)
+2026-02-26 20:35:04,619 - ERROR - Fallo al cargar el modulo sistema.py. Causa: '(' was never closed (__init__.py, line 14)
+2026-02-26 20:35:04,621 - ERROR - Fallo al cargar el modulo utilidades.py. Causa: '(' was never closed (__init__.py, line 14)
+2026-02-26 20:35:05,232 - INFO - Shard ID None has connected to Gateway (Session ID: 0f58414114f30592a2f5ee602933267b).
+2026-02-26 20:35:07,245 - INFO - --------------------------------------------------
+2026-02-26 20:35:07,246 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 20:35:07,246 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 20:35:07,246 - INFO - --------------------------------------------------
+2026-02-26 20:48:38,934 - ERROR - Attempting a reconnect in 1.85s
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1562, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1178, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1568, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [getaddrinfo failed]
+2026-02-26 20:48:40,941 - ERROR - Attempting a reconnect in 2.87s
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1562, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1178, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1568, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [getaddrinfo failed]
+2026-02-26 20:48:43,842 - ERROR - Attempting a reconnect in 2.43s
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1562, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1178, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1568, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [getaddrinfo failed]
+2026-02-26 21:18:41,791 - ERROR - Attempting a reconnect in 9.47s
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1562, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1178, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1568, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [getaddrinfo failed]
+2026-02-26 21:18:51,577 - INFO - Shard ID None session has been invalidated.
+2026-02-26 21:18:57,111 - INFO - Shard ID None has connected to Gateway (Session ID: f235b7b82d4f62aa280128880d419abb).
+2026-02-26 21:18:59,113 - INFO - --------------------------------------------------
+2026-02-26 21:18:59,114 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 21:18:59,114 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 21:18:59,114 - INFO - --------------------------------------------------
+2026-02-26 21:25:44,576 - ERROR - Attempting a reconnect in 2.23s
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1562, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1178, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1568, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [getaddrinfo failed]
+2026-02-26 21:25:47,104 - ERROR - Attempting a reconnect in 33.74s
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1562, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1178, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 1076, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crist\Documents\BOT-UPS-DISCORD\.venv\Lib\site-packages\aiohttp\connector.py", line 1568, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [getaddrinfo failed]
+2026-02-26 21:57:16,528 - INFO - Shard ID None session has been invalidated.
+2026-02-26 21:57:22,794 - INFO - Shard ID None has connected to Gateway (Session ID: 13de0764be993dda67daa2bd11226b79).
+2026-02-26 21:57:24,806 - INFO - --------------------------------------------------
+2026-02-26 21:57:24,807 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 21:57:24,808 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 21:57:24,808 - INFO - --------------------------------------------------
+2026-02-26 22:00:54,447 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 22:00:54,450 - INFO - logging in using static token
+2026-02-26 22:00:55,383 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-26 22:01:00,068 - INFO - Modulo cargado en memoria: academia.py
+2026-02-26 22:01:00,121 - ERROR - Fallo al cargar el modulo sistema.py. Causa: Extension 'cogs.sistema' has no 'setup' function.
+2026-02-26 22:01:00,128 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-26 22:04:50,118 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 22:04:50,121 - INFO - logging in using static token
+2026-02-26 22:04:51,524 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-26 22:04:55,517 - INFO - Modulo cargado en memoria: academia.py
+2026-02-26 22:04:55,558 - ERROR - Fallo al cargar el modulo sistema.py. Causa: Extension 'cogs.sistema' has no 'setup' function.
+2026-02-26 22:04:55,561 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-26 22:04:56,133 - INFO - Shard ID None has connected to Gateway (Session ID: d3472ab85277f82be38199e8e2f3c92d).
+2026-02-26 22:04:58,144 - INFO - --------------------------------------------------
+2026-02-26 22:04:58,145 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 22:04:58,146 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 22:04:58,146 - INFO - --------------------------------------------------
+2026-02-26 22:08:04,347 - WARNING - Archivo de persistencia entregas.json no localizado. Aplicando datos mock.
+2026-02-26 22:08:23,497 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-26 22:08:24,517 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-26 22:08:24,521 - WARNING - Saturacion de API detectada. Retraso inyectado: 2s (Intento 1/3)
+2026-02-26 22:08:26,532 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-26 22:08:26,735 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-26 22:08:26,737 - WARNING - Saturacion de API detectada. Retraso inyectado: 4s (Intento 2/3)
+2026-02-26 22:08:30,744 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-26 22:08:30,974 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-26 22:08:30,976 - WARNING - Saturacion de API detectada. Retraso inyectado: 8s (Intento 3/3)
+2026-02-26 22:08:30,977 - ERROR - Timeout de peticion: Limites de reintentos agotados.
+2026-02-26 22:22:40,075 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 22:22:40,078 - INFO - logging in using static token
+2026-02-26 22:22:40,918 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-26 22:22:44,960 - INFO - Modulo cargado en memoria: academia.py
+2026-02-26 22:22:44,990 - ERROR - Fallo al cargar el modulo sistema.py. Causa: Extension 'cogs.sistema' has no 'setup' function.
+2026-02-26 22:22:44,994 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-26 22:22:45,522 - INFO - Shard ID None has connected to Gateway (Session ID: 10e428dd6603f2006dd9712a920240c3).
+2026-02-26 22:22:47,535 - INFO - --------------------------------------------------
+2026-02-26 22:22:47,536 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 22:22:47,536 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 22:22:47,537 - INFO - --------------------------------------------------
+2026-02-26 22:25:36,590 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 22:25:36,593 - INFO - logging in using static token
+2026-02-26 22:25:37,558 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-26 22:25:41,496 - INFO - Modulo cargado en memoria: academia.py
+2026-02-26 22:25:41,532 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-26 22:25:41,538 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-26 22:25:41,963 - INFO - Shard ID None has connected to Gateway (Session ID: acc998a83a3025bd6626e7528c79d31e).
+2026-02-26 22:25:43,978 - INFO - --------------------------------------------------
+2026-02-26 22:25:43,978 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 22:25:43,979 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 22:25:43,979 - INFO - --------------------------------------------------
+2026-02-26 22:26:56,613 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-26 22:26:58,048 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-26 22:26:58,051 - WARNING - Saturacion de API detectada. Retraso inyectado: 2s (Intento 1/3)
+2026-02-26 22:27:00,055 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-26 22:27:00,299 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-26 22:27:00,302 - WARNING - Saturacion de API detectada. Retraso inyectado: 4s (Intento 2/3)
+2026-02-26 22:27:04,306 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-26 22:27:04,600 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-26 22:27:04,603 - WARNING - Saturacion de API detectada. Retraso inyectado: 8s (Intento 3/3)
+2026-02-26 22:27:04,604 - ERROR - Timeout de peticion: Limites de reintentos agotados.
+2026-02-26 22:54:13,417 - INFO - Shard ID None session has been invalidated.
+2026-02-26 22:55:17,340 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 22:55:17,343 - INFO - logging in using static token
+2026-02-26 23:15:15,177 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-26 23:15:15,180 - INFO - logging in using static token
+2026-02-26 23:15:16,143 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-26 23:15:20,651 - INFO - Modulo cargado en memoria: academia.py
+2026-02-26 23:15:20,688 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-26 23:15:20,692 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-26 23:15:21,184 - INFO - Shard ID None has connected to Gateway (Session ID: c0966d55f7f945a58f8f1316334eb967).
+2026-02-26 23:15:23,201 - INFO - --------------------------------------------------
+2026-02-26 23:15:23,202 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-26 23:15:23,202 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-26 23:15:23,203 - INFO - --------------------------------------------------
