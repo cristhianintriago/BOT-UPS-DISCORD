@@ -626,3 +626,47 @@ aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gatewa
 2026-02-27 08:15:57,930 - INFO - SISTEMA ONLINE Y OPERATIVO
 2026-02-27 08:15:57,931 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
 2026-02-27 08:15:57,931 - INFO - --------------------------------------------------
+2026-02-27 08:23:12,438 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 08:23:12,441 - INFO - logging in using static token
+2026-02-27 08:23:13,420 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 08:23:17,697 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 08:23:17,728 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 08:23:17,744 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 08:23:18,271 - INFO - Shard ID None has connected to Gateway (Session ID: 4ee8b971f247d49afe986d3ae294308a).
+2026-02-27 08:23:20,279 - INFO - --------------------------------------------------
+2026-02-27 08:23:20,279 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 08:23:20,280 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-27 08:23:20,280 - INFO - --------------------------------------------------
+2026-02-27 08:25:39,253 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 08:25:39,256 - INFO - logging in using static token
+2026-02-27 08:25:40,195 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 08:25:44,422 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 08:25:44,452 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 08:25:44,455 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 08:25:44,924 - INFO - Shard ID None has connected to Gateway (Session ID: 79803aea2ccc4ba0e85751cdb88700e1).
+2026-02-27 08:25:46,935 - INFO - --------------------------------------------------
+2026-02-27 08:25:46,936 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 08:25:46,936 - INFO - Instancia de usuario: UPS Bot Académico | ID de proceso: 1472995954734010438
+2026-02-27 08:25:46,937 - INFO - --------------------------------------------------
+2026-02-27 08:29:40,503 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 08:29:40,506 - INFO - logging in using static token
+2026-02-27 08:29:41,727 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 08:29:46,061 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 08:29:46,100 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 08:29:46,105 - ERROR - Fallo al cargar el modulo utilidades.py. Causa: Extension 'cogs.utilidades' raised an error: SyntaxError: unexpected character after line continuation character (utilidades.py, line 98)
+2026-02-27 08:29:46,507 - INFO - Shard ID None has connected to Gateway (Session ID: 124d903813ef9dd5e13b6416e0b9b785).
+2026-02-27 08:29:48,524 - INFO - --------------------------------------------------
+2026-02-27 08:29:48,525 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 08:29:48,525 - INFO - Instancia de usuario: UPS Bot Académico | ID de proceso: 1472995954734010438
+2026-02-27 08:29:48,526 - INFO - --------------------------------------------------
+2026-02-27 08:31:42,729 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 08:31:42,732 - INFO - logging in using static token
+2026-02-27 08:31:43,592 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 08:31:47,548 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 08:31:47,583 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 08:31:47,592 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 08:31:48,094 - INFO - Shard ID None has connected to Gateway (Session ID: adacc31bf3386b854a0449fbd63b22ef).
+2026-02-27 08:31:50,106 - INFO - --------------------------------------------------
+2026-02-27 08:31:50,107 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 08:31:50,108 - INFO - Instancia de usuario: UPS Bot Académico | ID de proceso: 1472995954734010438
+2026-02-27 08:31:50,108 - INFO - --------------------------------------------------

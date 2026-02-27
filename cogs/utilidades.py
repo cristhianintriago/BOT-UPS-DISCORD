@@ -95,7 +95,8 @@ class Utilidades(commands.Cog):
                 "`!materias` - Retorna malla curricular\n"
                 "`!entregas` - Consulta de tareas pendientes\n"
                 "`!tutor <consulta>` - Interfaz con IA\n"
-                "`!cuota_ia` - Metricas del uso de API"
+                "`!cuota_ia` - Metricas del uso de API\n"
+                "`!proyectar <notas>` - Proyeccion de promedio academico\n"
             ),
             inline=False
         )
