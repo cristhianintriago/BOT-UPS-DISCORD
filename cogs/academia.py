@@ -139,39 +139,45 @@ class Academia(commands.Cog):
     @commands.command(name='tutor')
     @commands.cooldown(1, 60, commands.BucketType.guild)
     async def tutor(self, ctx, *, consulta: str):
-        if not self.cliente_ia:
-            await ctx.send("Error de configuracion: El subsistema de IA esta fuera de linea.")
-            return
-
         async with ctx.typing():
+            # Misión B: El "Cerebro" de la UPS
             prompt_contextualizado = (
-                "Eres un profesor de Ingenieria de Software especializado en ensenar "
-                "a estudiantes de segundo semestre. Responde de forma tecnica pero clara, "
-                "usando ejemplos practicos. "
-                "Si la pregunta requiere codigo, utiliza sintaxis estandar de Python o Java.\n\n"
-                f"Consulta tecnica: {consulta}"
+                "Eres un Tutor experto de Ingeniería de Software de la Universidad Politécnica Salesiana (UPS). "
+                "Tu alumno está en los primeros semestres. Responde de forma técnica pero muy pedagógica. "
+                "Usa ejemplos prácticos relacionados con la ingeniería. "
+                "Si la pregunta requiere código, utiliza Python (prioridad) o C++.\n\n"
+                f"Consulta del estudiante: {consulta}"
             )
 
             try:
-                respuesta = await self._llamar_ia_con_reintentos(prompt_contextualizado)
-
-                if respuesta is None:
-                    await ctx.send("Limite de procesamiento alcanzado. Imposible establecer conexion con el servidor de IA.")
-                    return
-
+                import os
+                import google.generativeai as genai
+                
+                # Conexión limpia y directa
+                genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+                modelo = genai.GenerativeModel('gemini-2.5-flash')
+                respuesta = modelo.generate_content(prompt_contextualizado)
                 texto_respuesta = respuesta.text
 
-                # Logica de particion de strings para mitigar la limitacion de 2000 caracteres del socket de Discord
-                if len(texto_respuesta) <= 2000:
-                    await ctx.send(texto_respuesta)
+                # Misión C: Estética visual con Embeds
+                if len(texto_respuesta) <= 1024:
+                    embed = discord.Embed(
+                        title="🧠 Tutoría Académica UPS",
+                        description=f"**Consulta:** {consulta}",
+                        color=discord.Color.blue()
+                    )
+                    embed.add_field(name="Explicación", value=texto_respuesta, inline=False)
+                    embed.set_footer(text="Asistente de Ingeniería de Software | UPS")
+                    await ctx.send(embed=embed)
+                
+                # Si es una explicación muy larga, la dividimos para que Discord no falle
                 else:
                     fragmentos = [texto_respuesta[i:i + 1900] for i in range(0, len(texto_respuesta), 1900)]
                     for indice, fragmento in enumerate(fragmentos, 1):
-                        await ctx.send(f"**Segmento {indice}/{len(fragmentos)}**\n{fragmento}")
+                        await ctx.send(f"📚 **Página {indice}/{len(fragmentos)}**:\n{fragmento}")
 
             except Exception as e:
-                logger.error(f"Fallo de tiempo de ejecucion en modulo tutor: {e}")
-                await ctx.send("Error de procesamiento. Consulte los registros del servidor.")
+                await ctx.send(f"❌ El tutor no pudo responder. Error técnico: `{e}`")
 
     @commands.command(name='cuota_ia')
     async def cuota_ia(self, ctx):
