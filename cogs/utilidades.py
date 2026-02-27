@@ -105,7 +105,7 @@ class Utilidades(commands.Cog):
             value=(
                 "`!binario <numero>` - Conversion base 10 a base 2\n"
                 "`!unidades <cantidad> <unidad>` - Conversion de memoria\n"
-                "`!sys_info` - Diagnostico de hardware\n"
+                #"`!sys_info` - Diagnostico de hardware\n"
                 "`!health` - Estado de salud del nodo"
             ),
             inline=False

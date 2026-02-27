@@ -2,8 +2,9 @@ import os
 import json
 import logging
 import asyncio
+import datetime
 from datetime import datetime
-import discord
+import discord  
 from discord.ext import commands
 from google import genai
 
@@ -192,6 +193,37 @@ class Academia(commands.Cog):
         
         embed.set_footer(text="Sujeto a limites de capa gratuita.")
         await ctx.send(embed=embed)
+    #Calculadora de proyeccion promedio academico
+    @commands.command(name="proyectar")
+    async def proyectar(self, ctx, *notas: float):
+        # 1. Validamos que el usuario haya ingresado al menos una nota
+        if len(notas) == 0:
+            await ctx.send("⚠️ Por favor, ingresa al menos una nota. Ejemplo: `!proyectar 70 85 90`")
+            return
 
+        # 2. Aplicamos cálculos dinámicos
+        cantidad_notas = len(notas)
+        suma_notas = sum(notas)
+        promedio_actual = suma_notas / cantidad_notas
+
+        # 3. Construcción del mensaje visual
+        embed = discord.Embed(
+            title="📊 Análisis de Calificaciones",
+            color=discord.Color.blue()
+        )
+        
+        embed.add_field(name="Notas Evaluadas", value=f"{cantidad_notas} nota(s)", inline=True)
+        embed.add_field(name="Suma Total", value=f"{suma_notas:.2f}", inline=True)
+        embed.add_field(name="Promedio Actual", value=f"**{promedio_actual:.2f}**", inline=False)
+        
+        # 4. Lógica de estado académico
+        if promedio_actual >= 70.0:
+            embed.description = "🎉 ¡Vas por muy buen camino con este promedio! Sigue así."
+        else:
+            embed.description = "💡 Necesitas subir este promedio en tus próximas evaluaciones para asegurar la materia."
+            
+        embed.set_footer(text="Calculadora Dinámica de Promedios - Sistema UPS")
+        await ctx.send(embed=embed)
+    
 async def setup(bot):
     await bot.add_cog(Academia(bot))

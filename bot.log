@@ -582,3 +582,47 @@ aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gatewa
 2026-02-27 07:19:34,327 - INFO - SISTEMA ONLINE Y OPERATIVO
 2026-02-27 07:19:34,328 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
 2026-02-27 07:19:34,328 - INFO - --------------------------------------------------
+2026-02-27 07:34:32,693 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 07:34:32,696 - INFO - logging in using static token
+2026-02-27 07:34:33,629 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 07:34:37,118 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 07:34:37,142 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 07:34:37,166 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 07:34:37,622 - INFO - Shard ID None has connected to Gateway (Session ID: e95b8467d1581e54ac01c73f404a3f75).
+2026-02-27 07:34:39,634 - INFO - --------------------------------------------------
+2026-02-27 07:34:39,635 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 07:34:39,635 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-27 07:34:39,635 - INFO - --------------------------------------------------
+2026-02-27 07:51:36,907 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 07:51:36,909 - INFO - logging in using static token
+2026-02-27 07:51:37,659 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 07:51:41,124 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 07:51:41,148 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 07:51:41,150 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 07:51:41,658 - INFO - Shard ID None has connected to Gateway (Session ID: c05c15aebcfce747f347a08fcc209390).
+2026-02-27 07:51:43,679 - INFO - --------------------------------------------------
+2026-02-27 07:51:43,680 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 07:51:43,680 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-27 07:51:43,681 - INFO - --------------------------------------------------
+2026-02-27 07:54:47,054 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 07:54:47,056 - INFO - logging in using static token
+2026-02-27 07:54:47,911 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 07:54:51,390 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 07:54:51,415 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 07:54:51,417 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 07:54:51,905 - INFO - Shard ID None has connected to Gateway (Session ID: 3399477711e91468e6415d8e6f73f090).
+2026-02-27 07:54:53,919 - INFO - --------------------------------------------------
+2026-02-27 07:54:53,920 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 07:54:53,920 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-27 07:54:53,920 - INFO - --------------------------------------------------
+2026-02-27 08:15:50,263 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-02-27 08:15:50,266 - INFO - logging in using static token
+2026-02-27 08:15:51,247 - INFO - Iniciando carga de modulos (Cogs)...
+2026-02-27 08:15:55,331 - INFO - Modulo cargado en memoria: academia.py
+2026-02-27 08:15:55,370 - INFO - Modulo cargado en memoria: sistema.py
+2026-02-27 08:15:55,373 - INFO - Modulo cargado en memoria: utilidades.py
+2026-02-27 08:15:55,918 - INFO - Shard ID None has connected to Gateway (Session ID: 76d03e820a114751654f75c9d3d78969).
+2026-02-27 08:15:57,930 - INFO - --------------------------------------------------
+2026-02-27 08:15:57,930 - INFO - SISTEMA ONLINE Y OPERATIVO
+2026-02-27 08:15:57,931 - INFO - Instancia de usuario: Asistente_UPS | ID de proceso: 1472995954734010438
+2026-02-27 08:15:57,931 - INFO - --------------------------------------------------
